@@ -1,4 +1,4 @@
-# testapp
+# Study_Flutter
 
 > Project for Flutter Study   
 > 플러터 공부를 위한 프로젝트
