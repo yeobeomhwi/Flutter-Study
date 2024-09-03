@@ -5,10 +5,7 @@
 
 ## Completed Code Image
 
-
-<details>
-    <summary style="font-size: 30px; font-weight: bold;"> DAY - 1 </summary>
-
+### Day-1 
 <details>
     <summary>1. Align Widget Example </summary>
 
@@ -72,12 +69,7 @@
   
 </details>
 
-</details>
-
---------------
-
-<details>
-    <summary style="font-size: 30px; font-weight: bold;"> DAY - 2 </summary>
+### Day-2
 
 <details>
     <summary>1. onTap Example </summary>
@@ -147,7 +139,5 @@
 
 - ![Align Widget Example](./complete%20image/Day-2/Drag%20GestureDetector%20Example.png)
   
-</details>
-
 </details>
 
