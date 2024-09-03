@@ -23,40 +23,33 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Offset _position = Offset.zero;
-
-  void _handlePanUpdate(DragUpdateDetails details) {
-    setState(() {
-      _position = details.localPosition; // Update the position state
-    });
-  }
-
+  String? action;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Simple Pan Update Example'),
+        title: const Text('onDoubleTap Example'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             GestureDetector(
-              onPanUpdate: _handlePanUpdate,
+              onDoubleTap: () {
+                setState(() {
+                  action = '더블탭 했습니다.';
+                });
+              },
               child: Container(
                 padding: EdgeInsets.all(16.0),
                 color: Colors.blue,
                 child: Text(
-                  'Drag me',
+                  'DoubleTap me',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
-            const SizedBox(height: 20), // Add some space between the elements
-            Text(
-              'Current position: (${_position.dx.toStringAsFixed(1)}, ${_position.dy.toStringAsFixed(1)})',
-              style: const TextStyle(fontSize: 16),
-            ),
+            Text('$action')
           ],
         ),
       ),
