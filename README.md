@@ -7,6 +7,9 @@
 
 ### Day-1 
 <details>
+    <summary> </summary>
+
+<details>
     <summary>1. Align Widget Example </summary>
 
 - ![Align Widget Example](./complete%20image/Day-1/Align%20Widget%20Example.png)
@@ -69,7 +72,12 @@
   
 </details>
 
+</details>
+
 ### Day-2
+
+<details>
+    <summary> </summary>
 
 <details>
     <summary>1. onTap Example </summary>
@@ -139,5 +147,7 @@
 
 - ![Align Widget Example](./complete%20image/Day-2/Drag%20GestureDetector%20Example.png)
   
+</details>
+
 </details>
 
