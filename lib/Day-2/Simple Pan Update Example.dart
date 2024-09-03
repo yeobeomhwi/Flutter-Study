@@ -44,9 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
             GestureDetector(
               onPanUpdate: _handlePanUpdate,
               child: Container(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 color: Colors.blue,
-                child: Text(
+                child: const Text(
                   'Drag me',
                   style: TextStyle(color: Colors.white),
                 ),

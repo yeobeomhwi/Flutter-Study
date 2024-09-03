@@ -23,34 +23,45 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String? action;
+  String _message = "Tap or Gesture Here!";
+
+  void _updateMessage(String message) {
+    setState(() {
+      _message = message;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('onTap Example'),
+        title: const Text('GestureDetector Example'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            GestureDetector(
-              onTap: () {
-                setState(() {
-                  action = '탭 했습니다.';
-                });
-              },
-              child: Container(
-                padding: EdgeInsets.all(16.0),
-                color: Colors.blue,
-                child: Text(
-                  'Tap me',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
+        child: GestureDetector(
+          onTap: () {
+            _updateMessage('Tap detected!');
+          },
+          onDoubleTap: () {
+            _updateMessage('Double Tap detected!');
+          },
+          onLongPress: () {
+            _updateMessage('Long Press detected!');
+          },
+          onPanUpdate: (details) {
+            _updateMessage('Drag detected at \n ${details.localPosition}');
+          },
+          child: Container(
+            color: Colors.blue,
+            width: 300,
+            height: 300,
+            alignment: Alignment.center,
+            child: Text(
+              _message,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: Colors.white, fontSize: 18),
             ),
-            Text('$action')
-          ],
+          ),
         ),
       ),
     );

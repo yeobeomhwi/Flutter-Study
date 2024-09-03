@@ -5,6 +5,7 @@
 
 ## Completed Code Image
 
+
 <details>
     <summary style="font-size: 30px; font-weight: bold;"> DAY - 1 </summary>
 
@@ -103,6 +104,27 @@
     <summary>4. Simple Pan Update Example </summary>
 
 - ![Align Widget Example](./complete%20image/Day-2/Simple%20Pan%20Update%20Example.png)
+  
+</details>
+
+<details>
+    <summary>5. onPressed Example </summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/onPressed%20Example.png)
+  
+</details>
+
+<details>
+    <summary>6. GestureDetector Example </summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/GestureDetector%20Example.png)
+  
+</details>
+
+<details>
+    <summary>7. FloatingActionButton Example </summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/FloatingActionButton%20Example.png)
   
 </details>
 
