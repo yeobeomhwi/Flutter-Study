@@ -23,38 +23,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _action = '버튼을 클릭해주세요';
-
-  void _updateMessage(String action) {
-    setState(() {
-      _action = action;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FloatingActionButton Example'),
+        title: const Text('GestureDetector Click Example'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                _updateMessage('onPressed 했습니다.');
-              },
-              tooltip: 'Rest',
-              child: const Icon(Icons.ads_click),
+        child: GestureDetector(
+          onTap: () {
+            print('Text Click!');
+          },
+          child: const Text(
+            'Click me!',
+            style: TextStyle(
+              fontSize: 28,
             ),
-            const SizedBox(
-              height: 40,
-            ),
-            Text(
-              _action,
-            )
-          ],
+          ),
         ),
       ),
     );

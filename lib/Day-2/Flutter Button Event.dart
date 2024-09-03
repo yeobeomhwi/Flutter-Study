@@ -23,37 +23,31 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String _action = '버튼을 클릭해주세요';
-
-  void _updateMessage(String action) {
-    setState(() {
-      _action = action;
-    });
-  }
-
+  String? action = 'Hello, World!';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FloatingActionButton Example'),
+        title: const Text('Flutter Button Event'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FloatingActionButton(
-              onPressed: () {
-                _updateMessage('onPressed 했습니다.');
-              },
-              tooltip: 'Rest',
-              child: const Icon(Icons.ads_click),
-            ),
-            const SizedBox(
-              height: 40,
-            ),
             Text(
-              _action,
-            )
+              '$action',
+              style: const TextStyle(
+                fontSize: 28,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  action = 'Button Clicked!';
+                });
+              },
+              child: const Text('Click me'),
+            ),
           ],
         ),
       ),

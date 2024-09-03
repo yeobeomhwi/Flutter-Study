@@ -128,5 +128,26 @@
   
 </details>
 
+<details>
+    <summary>8. Flutter Button Event </summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/Flutter%20Button%20Event.png)
+  
+</details>
+
+<details>
+    <summary>9. GestureDetector Click Example</summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/GestureDetector%20Click%20Example.png)
+  
+</details>
+
+<details>
+    <summary>10. Drag GestureDetector Example</summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/Drag%20GestureDetector%20Example.png)
+  
+</details>
+
 </details>
 
