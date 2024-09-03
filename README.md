@@ -149,5 +149,11 @@
   
 </details>
 
+<details>
+    <summary>11. Flutter Counter App - Day2</summary>
+
+- ![Align Widget Example](./complete%20image/Day-2/Flutter%20Counter%20App%20-%20Day2.png)
+  
 </details>
 
+</details>
