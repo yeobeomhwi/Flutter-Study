@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('onDoubleTap Example'),
+        title: const Text('onTap Example'),
       ),
       body: Center(
         child: Column(
