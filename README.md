@@ -157,3 +157,52 @@
 </details>
 
 </details>
+
+
+### Day-3
+
+<details>
+    <summary> </summary>
+
+<details>
+    <summary>1. InheritedWidget Example </summary>
+
+- ![Align Widget Example](./complete%20image/Day-3/1.%20InheritedWidget%20Example.png)
+  
+</details>
+
+<details>
+    <summary>2. Flutter Demo Home Page </summary>
+
+- ![Align Widget Example](./complete%20image/Day-3/2.%20Flutter%20Demo%20Home%20Page.png)
+  
+</details>
+
+<details>
+    <summary>3. Lifecycle Demo </summary>
+
+- ![Align Widget Example](./complete%20image/Day-3/3.%20Lifecycle%20Demo.png)
+  
+</details>
+
+<details>
+    <summary>4. Text Toggle App </summary>
+
+- ![Align Widget Example](./complete%20image//Day-3/4.%20Text%20Toggle%20App.png)
+  
+</details>
+
+<details>
+    <summary>5. Switch Toggle Exampl </summary>
+
+- ![Align Widget Example](./complete%20image/Day-3/5.%20Switch%20Toggle%20Exampl.png)
+  
+</details>
+
+<details>
+    <summary>6. Todo List </summary>
+
+- ![Align Widget Example](./complete%20image/Day-3/6.%20Todo%20List.png)
+  
+</details>
+</details>

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,66 +22,61 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _count = 0;
+  final List<String> _items = [];
+  final TextEditingController _controller = TextEditingController();
 
-  void _addCount() {
+  void _addItem() {
     setState(() {
-      _count++;
-      print('$_count');
+      if (_controller.text.isNotEmpty) {
+        _items.add(_controller.text);
+        _controller.clear();
+      }
     });
   }
 
-  void _removeCount() {
+  void _removeItem(int index) {
     setState(() {
-      _count--;
-      print('$_count');
-    });
-  }
-
-  void _resetCount() {
-    setState(() {
-      _count = 0;
-      print('$_count');
+      _items.removeAt(index);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: _resetCount,
-        child: const Icon(Icons.restart_alt),
-      ),
       appBar: AppBar(
-        title: const Text('Flutter Counter App - Day2'),
+        title: const Text('Todo List'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('You have pushed the button this many times: '),
-            Text(
-              '$_count',
-              style: const TextStyle(
-                fontSize: 28,
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(8),
+            child: TextField(
+              controller: _controller,
+              decoration: InputDecoration(
+                labelText: 'Enter an item',
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FloatingActionButton(
-                  onPressed: _addCount,
-                  child: const Icon(Icons.add),
-                ),
-                const SizedBox(width: 20),
-                FloatingActionButton(
-                  onPressed: _removeCount,
-                  child: const Icon(Icons.remove),
-                ),
-              ],
+          ),
+          ElevatedButton(
+            onPressed: _addItem,
+            child: Text('Add Item'),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: _items.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: Icon(Icons.list),
+                  title: Text(_items[index]),
+                  trailing: IconButton(
+                    icon: Icon(Icons.delete),
+                    onPressed: () => _removeItem(index),
+                  ),
+                );
+              },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
