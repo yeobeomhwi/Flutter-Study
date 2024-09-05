@@ -206,3 +206,72 @@
   
 </details>
 </details>
+
+
+### Day-4 
+<details>
+    <summary></summary>
+    
+<details>
+    <summary>1. Navigator</summary>
+
+> HomeScreen 
+- ![1. HomeScreen](./complete%20image/Day-4/1.%20HomeScreen.png)
+
+> SecondScreen
+- ![1. SecondScreen](./complete%20image/Day-4/1.%20SecondScreen.png)
+
+</details>
+
+<details>
+    <summary>2. Go_Routes</summary>
+
+> HomeScreen
+- ![2. HomeScreen](./complete%20image/Day-4/2.%20HomeScreen.png)
+
+> SecondScreen
+- ![2. SecondScreen](./complete%20image/Day-4/2.%20SecondScreen.png)
+
+> ThirdScreen
+- ![2. ThirdScreen](./complete%20image/Day-4/2.%20ThirdScreen.png)
+
+> 
+</details>
+
+<details>
+    <summary>3. Tab Navigation Example</summary>
+
+> Home Screen
+- ![3. Home Screen](./complete%20image/Day-4/3.%20Tab_Home.png)
+
+> Search Screen
+- ![3. Search Screen](./complete%20image/Day-4/3.%20Tab_Search.png)
+
+> Profile Screen
+- ![3. Profile Screen](./complete%20image/Day-4/3.%20Tab_Profile.png)
+
+> 
+</details>
+
+<details>
+    <summary>4. Drawer Navigation Example</summary>
+
+> Drawer
+- ![4. Drawer](./complete%20image/Day-4/4.%20Drawer.png)
+- 
+> Start Screen
+- ![4. Home Screen](./complete%20image/Day-4/4.%20StartScreen.png)
+  
+> Home Screen
+- ![4. Home Screen](./complete%20image/Day-4/4.%20HomeScreen.png)
+
+> Search Screen
+- ![4. Search Screen](./complete%20image/Day-4/4.%20SearchScreen.png)
+
+> Profile Screen
+- ![4. Profile Screen](./complete%20image/Day-4/4.%20ProfileScreen.png)
+
+> 
+</details>
+
+</details>
