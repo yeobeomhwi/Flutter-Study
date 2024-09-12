@@ -3,6 +3,14 @@
 > Project for Flutter Study   
 > 플러터 공부를 위한 프로젝트
 
+## 사용한 API
+>go_router: ^14.2.7(https://pub.dev/packages/go_router)
+>shared_preferences: ^2.3.2  (https://pub.dev/packages/shared_preferences)
+>sqflite: ^2.3.3+1(https://pub.dev/packages/sqflite)
+>hive: ^2.2.3(https://pub.dev/packages/hive)
+>hive_flutter: ^1.1.0 (https://pub.dev/packages/hive_flutter)
+
+
 ## Completed Code Image
 
 ### Day-1 
