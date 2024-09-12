@@ -281,7 +281,7 @@
 <details>
     <summary></summary>
 <details>
-    <summary>Nickname App</summary>
+    <summary>1. Nickname App</summary>
 
 > Nickname App_1
 - ![Nickname App_1](./complete%20image/Day-5/Nickname_1.png)
@@ -291,11 +291,68 @@
 </details>
 
 <details>
-    <summary>Name Storage</summary>
+    <summary>2. Name Storage</summary>
 
 > Name Storage
 - ![Nickname App_1](./complete%20image/Day-5/NameStorage.png)
     
 </details>
 
+<details>
+    <summary>3. Dark Mode Setting</summary>
+
+> Dark Mode Setting_Light
+- ![Nickname App_1](./complete%20image/Day-5/DarkModeSetting_false.png)
+> Dark Mode Setting_Dark
+- ![Nickname App_1](./complete%20image/Day-5/DarkModeSetting_true.png)
+    
+</details>
+
+
+<details>
+    <summary>4. Last Login Time</summary>
+
+> Last Login Time
+- ![Nickname App_1](./complete%20image/Day-5/LastLoginTime.png)
+
+</details>
+
+<details>
+    <summary>5. Nickname App - Sqflite</summary>
+
+> Nickname App - Sqflite
+- ![Nickname App_1](./complete%20image/Day-5/Nickname_Sqflite.png)
+
+</details>
+
+
+<details>
+    <summary>6. Notes - Sqflife</summary>
+
+> Notes_1
+- ![Nickname App_1](./complete%20image/Day-5/Notes_1.png)
+> Notes_2
+- ![Nickname App_1](./complete%20image/Day-5/Notes_2.png)
+> Notes_3
+- ![Nickname App_1](./complete%20image/Day-5/Notes_3.png)
+</details>
+
+<details>
+    <summary>7. Nickname App - Hive </summary>
+
+> Nickname App - Hive
+- ![Nickname App_1](./complete%20image/Day-5/Nickname_hive.png)
+
+</details>
+
+<details>
+    <summary>8. Notes - Hive </summary>
+
+> Notes_1
+- ![Nickname App_1](./complete%20image/Day-5/Notes_hive_1.png)
+> Notes_2
+- ![Nickname App_1](./complete%20image/Day-5/Notes_hive_2.png)
+> Notes_3
+- ![Nickname App_1](./complete%20image/Day-5/Notes_hive_3.png)
+</details>
 </details>

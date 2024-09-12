@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-Future<void> example() async {
-  //async = 비동기 작업을 수행할것을 나타냄
-  //await = 비동기 작업이 완료될 때까지 함수의 실행을 멈추고, 완료되면 다음라인 실행
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-}
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
