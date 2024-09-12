@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Name Storage',
+      title: 'Nickname App',
       home: MyHomePage(),
     );
   }
@@ -81,13 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Hello, $_nickname',
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall
-                  ?.copyWith(fontWeight: FontWeight.bold),
-            ),
             TextField(
               controller: _controller,
               decoration: const InputDecoration(
@@ -95,10 +88,20 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(height: 20),
+            Text('Saved Nickname: $_nickname'),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: (_saveNickname),
-              child: const Text('Save'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: (_saveNickname),
+                  child: const Text('Save'),
+                ),
+                ElevatedButton(
+                  onPressed: (_deleteNickname),
+                  child: const Text('Delete'),
+                ),
+              ],
             ),
           ],
         ),

@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Name Storage'),
+        title: const Text('Nickname App'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

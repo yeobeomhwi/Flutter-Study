@@ -290,4 +290,12 @@
     
 </details>
 
+<details>
+    <summary>Name Storage</summary>
+
+> Name Storage
+- ![Nickname App_1](./complete%20image/Day-5/NameStorage.png)
+    
+</details>
+
 </details>
