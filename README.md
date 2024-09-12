@@ -275,3 +275,19 @@
 </details>
 
 </details>
+
+
+### Day-5
+<details>
+    <summary></summary>
+<details>
+    <summary>Nickname App</summary>
+
+> Nickname App_1
+- ![Nickname App_1](./complete%20image/Day-5/Nickname_1.png)
+> Nickname App_2
+- ![Nickname App_2](./complete%20image/Day-5/Nickname_2.png)
+    
+</details>
+
+</details>
