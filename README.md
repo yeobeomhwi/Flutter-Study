@@ -460,4 +460,31 @@
 - ![비동기 프로그래밍 4](./complete%20image/Day-7/비동기%204.gif)
 </details>
 
+<details>
+    <summary> fetchDataWithError</summary>
+
+> fetchDataWithError
+- ![fetchDataWithError](./complete%20image/Day-7/fetchDataWithError.png)
+</details>
+
+<details>
+    <summary> then_catchError</summary>
+
+> then_catchError
+- ![then_catchError](./complete%20image/Day-7/then_catchError.png)
+</details>
+
+<details>
+    <summary> Parallel_Asyn</summary>
+
+> Parallel_Asyn
+- ![Parallel_Asyn](./complete%20image/Day-7/Parallel%20Asyn.gif)
+</details>
+
+<details>
+    <summary> whenComplete</summary>
+
+> whenComplete
+- ![whenComplete](./complete%20image/Day-7/whenComplete.gif)
+</details>
 </details>
