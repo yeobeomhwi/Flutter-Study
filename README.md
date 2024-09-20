@@ -364,3 +364,100 @@
 - ![Nickname App_1](./complete%20image/Day-5/Notes_hive_3.png)
 </details>
 </details>
+
+### Day - 6
+<details>
+    <summary></summary>
+
+<details>
+    <summary>mixin_with_1</summary>
+
+> mixin_with_1
+- ![mixin_with_1](./complete%20image/Day-6/mixin_with_1.png)
+
+</details>
+
+<details>
+    <summary>mixin_with_2</summary>
+
+> mixin_with_2
+- ![mixin_with_2](./complete%20image/Day-6/mixin_with_2.png)
+
+</details>
+
+<details>
+    <summary>mixin_on</summary>
+
+> mixin_on
+- ![mixin_on](./complete%20image/Day-6/mixin_on.png)
+
+</details>
+
+<details>
+    <summary>Logger_mixin_with</summary>
+
+> Logger_mixin_with
+- ![Logger_mixin_with](./complete%20image/Day-6/Logger_mixin_with.png)
+
+</details>
+
+<details>
+    <summary>countOccurrences</summary>
+
+> countOccurrences
+- ![countOccurrences](./complete%20image/Day-6/countOccurrences%20.png)
+
+</details>
+
+<details>
+    <summary>ListExtensions</summary>
+
+> ListExtensions
+- ![ListExtensions](./complete%20image/Day-6/ListExtension.png)
+
+</details>
+
+<details>
+    <summary>Generic type</summary>
+
+> Generic type
+- ![Generic type](./complete%20image/Day-6/Generic%20type.png)
+
+</details>
+
+
+</details>
+
+### Day - 7
+<details>
+    <summary></summary>
+
+<details>
+    <summary> 비동기 프로그래밍 1</summary>
+
+> 비동기 프로그래밍 1
+- ![비동기 프로그래밍 1](./complete%20image/Day-7/비동기%201.png)
+</details>
+
+<details>
+    <summary> 비동기 프로그래밍 2</summary>
+
+> 비동기 프로그래밍 2
+- ![비동기 프로그래밍 2](./complete%20image/Day-7/비동기%202.gif)
+</details>
+
+<details>
+    <summary> 비동기 프로그래밍 3</summary>
+
+> 비동기 프로그래밍 3
+- ![비동기 프로그래밍 3](./complete%20image/Day-7/비동기%203.gif)
+</details>
+
+<details>
+    <summary> 비동기 프로그래밍 4</summary>
+
+> 비동기 프로그래밍 4
+- ![비동기 프로그래밍 4](./complete%20image/Day-7/비동기%204.gif)
+</details>
+
+</details>
