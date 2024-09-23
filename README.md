@@ -365,6 +365,7 @@
 </details>
 </details>
 
+
 ### Day - 6
 <details>
     <summary></summary>
@@ -428,6 +429,7 @@
 
 </details>
 
+
 ### Day - 7
 <details>
     <summary></summary>
@@ -487,4 +489,26 @@
 > whenComplete
 - ![whenComplete](./complete%20image/Day-7/whenComplete.gif)
 </details>
+</details>
+
+
+### Day - 8
+<details>
+    <summary></summary>
+
+<details>
+    <summary>Stream_1</summary>
+
+> Stream_1
+- ![Stream_1](./complete%20image/Day-8/Stream_1.gif)
+</details>
+
+<details>
+    <summary>Stream_Subscription_1</summary>
+
+> Stream_Subscription_1
+- ![Stream_Subscription_1](./complete%20image/Day-8/Stream_Subscription_1.gif)
+</details>
+
+
 </details>
