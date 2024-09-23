@@ -510,5 +510,37 @@
 - ![Stream_Subscription_1](./complete%20image/Day-8/Stream_Subscription_1.gif)
 </details>
 
+<details>
+    <summary>Stream_map_where</summary>
+
+> Stream_map_where
+- ![Stream_map_where](./complete%20image/Day-8/Stream_map_where.gif)
+</details>
+
+<details>
+    <summary>simple_generator</summary>
+
+> simple_generator
+- ![simple_generator](./complete%20image/Day-8/simple%20generator.png)
+</details>
+
+
+<details>
+    <summary>Overlapping_generator</summary>
+
+> Overlapping_generator
+- ![Overlapping_generator](./complete%20image/Day-8/Overlapping_generator.png)
+</details>
+
+
+<details>
+    <summary>infinite_generator</summary>
+
+> infinite_generator
+- ![infinite_generator](./complete%20image/Day-8/infinite_generator.png)
+</details>
+
+
+
 
 </details>
