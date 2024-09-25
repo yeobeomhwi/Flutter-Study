@@ -13,7 +13,7 @@
 
 ## Completed Code Image
 
-### Day-1 
+### Day - 1 
 <details>
     <summary> </summary>
 
@@ -82,7 +82,7 @@
 
 </details>
 
-### Day-2
+### Day - 2
 
 <details>
     <summary> </summary>
@@ -167,7 +167,7 @@
 </details>
 
 
-### Day-3
+### Day - 3
 
 <details>
     <summary> </summary>
@@ -216,7 +216,7 @@
 </details>
 
 
-### Day-4 
+### Day - 4 
 <details>
     <summary></summary>
     
@@ -285,7 +285,7 @@
 </details>
 
 
-### Day-5
+### Day - 5
 <details>
     <summary></summary>
 <details>
@@ -493,6 +493,7 @@
 
 
 ### Day - 8
+
 <details>
     <summary></summary>
 
@@ -543,29 +544,16 @@
 </details>
 
 ### Day - 9
-<details>
-    <summary></summary>
 
 <details>
-    <summary>StreamController</summary>
-
-> StreamController
-- ![StreamController](./complete%20image/Day-9/StreamController.png)
-</details>
-
-<details>
-    <summary>StreamEvent</summary>
-
-> StreamEvent
-- ![StreamEvent](./complete%20image/Day-9/StreamEvent.png)
-</details>
-
+    <summary> </summary>
 
 <details>
     <summary>rxdart_1</summary>
 
 > rxdart_1
 - ![rxdart_1](./complete%20image/Day-9/rxdart_1.gif)
+
 </details>
 
 
@@ -574,14 +562,99 @@
 
 > rxdart_2
 - ![rxdart_2](./complete%20image/Day-9/rxdart_2.gif)
-</details>
 
+</details>
 
 <details>
     <summary>StreamController</summary>
 
 > StreamController
 - ![StreamController](./complete%20image/Day-9/StreamController.png)
+
+</details>
+
+<details>
+    <summary>StreamEvent</summary>
+
+> StreamEvent
+- ![StreamEvent](./complete%20image/Day-9/StreamEvent.png)
+
+</details>
+
+
+</details>
+
+### Day - 10
+
+<details>
+    <summary> </summary>
+
+
+<details>
+    <summary>dateTime</summary>
+
+> dateTime
+- ![dateTime](./complete%20image/Day-10/dateTime.png)
+
+</details>
+
+<details>
+    <summary>List</summary>
+
+> List
+- ![List](./complete%20image/Day-10/List.png)
+
+</details>
+
+
+<details>
+    <summary>Map</summary>
+
+> Map
+- ![Map](./complete%20image/Day-10/Map.png)
+
+</details>
+
+
+<details>
+    <summary>Uri</summary>
+
+> Uri
+- ![Uri](./complete%20image/Day-10/Uri.png)
+
+</details>
+
+
+<details>
+    <summary>SingletonPattern</summary>
+
+> SingletonPattern
+- ![SingletonPattern](./complete%20image/Day-10/SingletonPattern.png)
+
+</details>
+
+<details>
+    <summary>FactoryPattern</summary>
+
+> FactoryPattern
+- ![FactoryPattern](./complete%20image/Day-10/FactoryPattern.png)
+
+</details>
+
+<details>
+    <summary>DecoratorPattern</summary>
+
+> DecoratorPattern
+- ![DecoratorPattern](./complete%20image/Day-10/DecoratorPattern.png)
+
+</details>
+
+<details>
+    <summary>ObserverPattern</summary>
+
+> ObserverPattern
+- ![ObserverPattern](./complete%20image/Day-10/ObserverPattern.png)
+
 </details>
 
 </details>
