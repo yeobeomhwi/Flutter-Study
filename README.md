@@ -10,7 +10,7 @@
 - hive: ^2.2.3 - [공식 문서로 이동](https://pub.dev/packages/hive)
 - hive_flutter: ^1.1.0  - [공식 문서로 이동](https://pub.dev/packages/hive_flutter)
 - rxdart: ^0.28.0 - [공식 문서로 이동](https://pub.dev/packages/rxdart)
-
+-   http: ^1.2.2 - [공식 문서로 이동](https://pub.dev/packages/http)
 ## Completed Code Image
 
 ### Day - 1 
