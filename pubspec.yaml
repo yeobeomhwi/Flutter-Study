@@ -59,7 +59,7 @@ dev_dependencies:
 
   rxdart: ^0.28.0
 
-  http: ^1.2.2 
+  http: ^1.2.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
