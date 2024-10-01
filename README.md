@@ -881,9 +881,62 @@
 
 > Animation_3
 
-- ![Animation_3](./complete%20image/Day-13/Animation_3.png)
+- ![Animation_3](./complete%20image/Day-13/Animation_3.gif)
 
 </details>
 
 
+<details>
+    <summary>Animation_4</summary>
+
+> Animation_4
+
+- ![Animation_3](./complete%20image/Day-13/Animation_4.gif)
+
+</details>
+
+<details>
+    <summary>Animation_5</summary>
+
+> Animation_5
+
+- ![Animation_5](./complete%20image/Day-13/Animation_5.gif)
+
+</details>
+
+<details>
+    <summary>Animation_6</summary>
+
+> Animation_6
+
+- ![Animation_6](./complete%20image/Day-13/Animation_6.gif)
+
+</details>
+
+<details>
+    <summary>Animation_7</summary>
+
+> Animation_7
+
+- ![Animation_7](./complete%20image/Day-13/Animation_7.gif)
+
+</details>
+
+<details>
+    <summary>Animation_8</summary>
+
+> Animation_8
+
+- ![Animation_8](./complete%20image/Day-13/Animation_8.gif)
+
+</details>
+
+<details>
+    <summary>Animation_9</summary>
+
+> Animation_9
+
+- ![Animation_9](./complete%20image/Day-13/Animation_9.gif)
+
+</details>
 </details>

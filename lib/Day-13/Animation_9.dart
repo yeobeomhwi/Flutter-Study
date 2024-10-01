@@ -22,7 +22,7 @@ class _RotationTransitionState extends State<RotationTransition> {
   double turns = 0.0;
 
   void _changeRotation() {
-    setState(() => turns += 1.0 );
+    setState(() => turns += 1.0 / 8.0);
   }
 
   @override
