@@ -12,7 +12,7 @@
 - hive_flutter: ^1.1.0 - [공식 문서로 이동](https://pub.dev/packages/hive_flutter)
 - rxdart: ^0.28.0 - [공식 문서로 이동](https://pub.dev/packages/rxdart)
 - http: ^1.2.2 - [공식 문서로 이동](https://pub.dev/packages/http)
-
+- provider: ^6.1.2 - [공식 문서로 이동](https://pub.dev/packages/provider)
 ## Completed Code Image
 
 ### Day - 1 [Sort widgets]
@@ -938,4 +938,14 @@
 - ![Animation_9](./complete%20image/Day-13/Animation_9.gif)
 
 </details>
+
+<details>
+    <summary>CounterApp</summary>
+
+> CounterApp
+
+- ![CounterApp](./complete%20image/Day-13/CounterApp.gif)
+
+</details>
+
 </details>
