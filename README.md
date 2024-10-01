@@ -15,7 +15,7 @@
 
 ## Completed Code Image
 
-### Day - 1
+### Day - 1 [Sort widgets]
 
 <details>
     <summary> </summary>
@@ -85,7 +85,7 @@
 
 </details>
 
-### Day - 2
+### Day - 2 [Event]
 
 <details>
     <summary> </summary>
@@ -169,7 +169,7 @@
 
 </details>
 
-### Day - 3
+### Day - 3 [State Management]
 
 <details>
     <summary> </summary>
@@ -217,7 +217,7 @@
 </details>
 </details>
 
-### Day - 4
+### Day - 4 [Routes]
 
 <details>
     <summary></summary>
@@ -300,7 +300,7 @@
 
 </details>
 
-### Day - 5
+### Day - 5 [Database, Hive,Sqflife]
 
 <details>
     <summary></summary>
@@ -387,7 +387,7 @@
 </details>
 </details>
 
-### Day - 6
+### Day - 6 [Mixin]
 
 <details>
     <summary></summary>
@@ -457,7 +457,7 @@
 
 </details>
 
-### Day - 7
+### Day - 7 [asynchronous programming-1]
 
 <details>
     <summary></summary>
@@ -525,9 +525,9 @@
 
 - ![whenComplete](./complete%20image/Day-7/whenComplete.gif)
 </details>
-</details>
+</details> 
 
-### Day - 8
+### Day - 8 [asynchronous programming-2]
 
 <details>
     <summary></summary>
@@ -582,7 +582,7 @@
 
 </details>
 
-### Day - 9
+### Day - 9 [responsive programming]
 
 <details>
     <summary> </summary>
@@ -625,7 +625,7 @@
 
 </details>
 
-### Day - 10
+### Day - 10 [Design pattern]
 
 <details>
     <summary> </summary>
@@ -704,7 +704,7 @@
 
 </details>
 
-### Day - 11
+### Day - 11 [TEST]
 
 <details>
     <summary> </summary>
@@ -792,7 +792,7 @@
 
 </details>
 
-### Day - 12
+### Day - 12 [HTTP]
 
 <details>
     <summary> </summary>
@@ -851,10 +851,9 @@
 
 </details>
 
-</details>
+</details> 
 
-
-### Day - 13
+### Day - 13 [Animation]
 <details>
     <summary> </summary>
 
