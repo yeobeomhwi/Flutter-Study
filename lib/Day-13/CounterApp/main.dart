@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:studyfluter/screen/decrease_screen.dart';
+import 'package:studyfluter/Day-13/CounterApp/screen/decrease_screen.dart';
 
-import '../../model/counter_model.dart';
+import 'model/counter_model.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:studyfluter/model/counter_model.dart';
+
+import '../model/counter_model.dart';
+
 
 
 class DecreaseScreen extends StatefulWidget {
