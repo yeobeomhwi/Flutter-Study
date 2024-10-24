@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => FeedbackProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return const MaterialApp(
       home: FeedbackScreen(),
     );
   }
@@ -28,12 +33,15 @@ class Feedback {
   });
 }
 
-class FeedbackController extends GetxController {
-  var feedbacks = <Feedback>[].obs;
+class FeedbackProvider with ChangeNotifier {
+  final List<Feedback> _feedbacks = [];
+
+  List<Feedback> get feedbacks => _feedbacks;
 
   void addFeedback(Feedback feedback) {
     // TODO: Implement the addFeedback method
-    feedbacks.add(feedback);
+    _feedbacks.add(feedback);
+    notifyListeners();
   }
 }
 
@@ -42,26 +50,26 @@ class FeedbackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.put(FeedbackController());
-
     return Scaffold(
       appBar: AppBar(title: const Text('Feedback System')),
       body: Column(
         children: [
           Expanded(
-            child: Obx(() {
-              return ListView.builder(
-                itemCount: feedbackController.feedbacks.length,
-                itemBuilder: (context, index) {
-                  final feedback = feedbackController.feedbacks[index];
-                  return ListTile(
-                    title: Text(feedback.author),
-                    subtitle: Text(feedback.content),
-                    trailing: Text(feedback.submittedAt.toLocal().toString()),
-                  );
-                },
-              );
-            }),
+            child: Consumer<FeedbackProvider>(
+              builder: (context, provider, _) {
+                return ListView.builder(
+                  itemCount: provider.feedbacks.length,
+                  itemBuilder: (context, index) {
+                    final feedback = provider.feedbacks[index];
+                    return ListTile(
+                      title: Text(feedback.author),
+                      subtitle: Text(feedback.content),
+                      trailing: Text(feedback.submittedAt.toLocal().toString()),
+                    );
+                  },
+                );
+              },
+            ),
           ),
           const Padding(
             padding: EdgeInsets.all(8.0),
@@ -78,7 +86,6 @@ class FeedbackForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.find();
     final authorController = TextEditingController();
     final contentController = TextEditingController();
 
@@ -94,16 +101,23 @@ class FeedbackForm extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            final feedback = Feedback(
-              author: authorController.text,
-              content: contentController.text,
-              submittedAt: DateTime.now(),
-            );
+            // Add the feedback
+            final String author = authorController.text;
+            final String content = contentController.text;
 
-            // TODO: Add the feedback
-            feedbackController.addFeedback(feedback);
-            authorController.clear();
-            contentController.clear();
+            if (author.isNotEmpty && content.isNotEmpty) {
+              final feedback = Feedback(
+                author: author,
+                content: content,
+                submittedAt: DateTime.now(),
+              );
+
+              Provider.of<FeedbackProvider>(context, listen: false).addFeedback(feedback);
+
+              // Clear the text fields after submission
+              authorController.clear();
+              contentController.clear();
+            }
           },
           child: const Text('Submit'),
         ),

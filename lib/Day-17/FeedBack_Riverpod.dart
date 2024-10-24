@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +14,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return const MaterialApp(
       home: FeedbackScreen(),
     );
   }
@@ -28,40 +32,44 @@ class Feedback {
   });
 }
 
-class FeedbackController extends GetxController {
-  var feedbacks = <Feedback>[].obs;
+class FeedbackNotifier extends StateNotifier<List<Feedback>> {
+  FeedbackNotifier() : super([]);
 
   void addFeedback(Feedback feedback) {
     // TODO: Implement the addFeedback method
-    feedbacks.add(feedback);
+    state =[...state,feedback];
   }
 }
 
-class FeedbackScreen extends StatelessWidget {
+final feedbackProvider =
+StateNotifierProvider<FeedbackNotifier, List<Feedback>>(
+      (ref) => FeedbackNotifier(),
+);
+
+class FeedbackScreen extends ConsumerWidget {
   const FeedbackScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.put(FeedbackController());
+  Widget build(BuildContext context, WidgetRef ref) {
+    // TODO: Implement the watch method
+     final feedbacks = ref.watch(feedbackProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Feedback System')),
       body: Column(
         children: [
           Expanded(
-            child: Obx(() {
-              return ListView.builder(
-                itemCount: feedbackController.feedbacks.length,
-                itemBuilder: (context, index) {
-                  final feedback = feedbackController.feedbacks[index];
-                  return ListTile(
-                    title: Text(feedback.author),
-                    subtitle: Text(feedback.content),
-                    trailing: Text(feedback.submittedAt.toLocal().toString()),
-                  );
-                },
-              );
-            }),
+            child: ListView.builder(
+              itemCount: feedbacks.length,
+              itemBuilder: (context, index) {
+                final feedback = feedbacks[index];
+                return ListTile(
+                  title: Text(feedback.author),
+                  subtitle: Text(feedback.content),
+                  trailing: Text(feedback.submittedAt.toLocal().toString()),
+                );
+              },
+            ),
           ),
           const Padding(
             padding: EdgeInsets.all(8.0),
@@ -73,12 +81,11 @@ class FeedbackScreen extends StatelessWidget {
   }
 }
 
-class FeedbackForm extends StatelessWidget {
+class FeedbackForm extends ConsumerWidget {
   const FeedbackForm({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.find();
+  Widget build(BuildContext context, WidgetRef ref) {
     final authorController = TextEditingController();
     final contentController = TextEditingController();
 
@@ -99,9 +106,8 @@ class FeedbackForm extends StatelessWidget {
               content: contentController.text,
               submittedAt: DateTime.now(),
             );
-
             // TODO: Add the feedback
-            feedbackController.addFeedback(feedback);
+            ref.read(feedbackProvider.notifier).addFeedback(feedback);
             authorController.clear();
             contentController.clear();
           },

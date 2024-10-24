@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'feedback_bloc.dart';
+import 'feedback_model.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    BlocProvider(
+      create: (context) => FeedbackBloc(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,30 +17,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return const MaterialApp(
       home: FeedbackScreen(),
     );
-  }
-}
-
-class Feedback {
-  final String author;
-  final String content;
-  final DateTime submittedAt;
-
-  Feedback({
-    required this.author,
-    required this.content,
-    required this.submittedAt,
-  });
-}
-
-class FeedbackController extends GetxController {
-  var feedbacks = <Feedback>[].obs;
-
-  void addFeedback(Feedback feedback) {
-    // TODO: Implement the addFeedback method
-    feedbacks.add(feedback);
   }
 }
 
@@ -42,26 +28,30 @@ class FeedbackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.put(FeedbackController());
-
     return Scaffold(
       appBar: AppBar(title: const Text('Feedback System')),
       body: Column(
         children: [
           Expanded(
-            child: Obx(() {
-              return ListView.builder(
-                itemCount: feedbackController.feedbacks.length,
-                itemBuilder: (context, index) {
-                  final feedback = feedbackController.feedbacks[index];
-                  return ListTile(
-                    title: Text(feedback.author),
-                    subtitle: Text(feedback.content),
-                    trailing: Text(feedback.submittedAt.toLocal().toString()),
+            child: BlocBuilder<FeedbackBloc, FeedbackState>(
+              builder: (context, state) {
+                if (state is FeedbackLoaded) {
+                  return ListView.builder(
+                    itemCount: state.feedbacks.length,
+                    itemBuilder: (context, index) {
+                      final feedback = state.feedbacks[index];
+                      return ListTile(
+                        title: Text(feedback.author),
+                        subtitle: Text(feedback.content),
+                        trailing:
+                        Text(feedback.submittedAt.toLocal().toString()),
+                      );
+                    },
                   );
-                },
-              );
-            }),
+                }
+                return const Center(child: Text('No feedbacks yet'));
+              },
+            ),
           ),
           const Padding(
             padding: EdgeInsets.all(8.0),
@@ -78,7 +68,6 @@ class FeedbackForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FeedbackController feedbackController = Get.find();
     final authorController = TextEditingController();
     final contentController = TextEditingController();
 
@@ -94,14 +83,14 @@ class FeedbackForm extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            final feedback = Feedback(
+            final feedback = FeedBack(
               author: authorController.text,
               content: contentController.text,
               submittedAt: DateTime.now(),
             );
 
             // TODO: Add the feedback
-            feedbackController.addFeedback(feedback);
+            context.read<FeedbackBloc>().add(AddFeedback(feedback));
             authorController.clear();
             contentController.clear();
           },
