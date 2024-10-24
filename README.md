@@ -1086,3 +1086,121 @@
 
 </details>
 </details>
+
+
+
+
+### Day -17 [상태관리]
+<details>
+  <summary></summary>
+
+<details>
+    <summary>Provider</summary>
+`Provider`는 Flutter에서 가장 기본적인 상태 관리 패키지입니다. 객체를 앱의 상위 트리에 제공하고, 자식 위젯들이 해당 객체에 접근할 수 있도록 합니다.
+
+**사용법**:
+1. `ChangeNotifier`를 사용하는 클래스를 정의.
+2. `ChangeNotifierProvider`로 해당 클래스를 상위 위젯에 제공.
+3. `Consumer`로 자식 위젯에서 상태를 구독.
+
+
+```dart
+class Counter extends ChangeNotifier {
+  int value = 0;
+
+  void increment() {
+    value++;
+    notifyListeners();
+  }
+}
+```
+
+```dart
+ChangeNotifierProvider(
+  create: (context) => Counter(),
+  child: MyApp(),
+);
+```
+
+</details>
+
+
+<details>
+    <summary>Riverpod</summary>
+`Riverpod`은 `Provider`를 기반으로 더 유연하고 안전한 상태 관리 라이브러리입니다. 글로벌 상태 관리를 더욱 간단하게 하며, `Provider`보다 더 명확한 API를 제공합니다.
+
+**사용법**:
+1. `Provider`나 `StateNotifier`를 정의.
+2. `Provider나` `StateNotifierProvider를` 사용해 상태를 관리..
+
+
+```dart
+final counterProvider = StateNotifierProvider<CounterNotifier, int>((ref) {
+  return CounterNotifier();
+});
+
+class CounterNotifier extends StateNotifier<int> {
+  CounterNotifier() : super(0);
+
+  void increment() => state++;
+}
+
+```
+
+</details>
+
+
+<details>
+    <summary>BLoC</summary>
+`BLoC`(Business Logic Component)은 이벤트 기반 상태 관리 패턴으로, 이벤트와 상태로 비즈니스 로직을 분리하여 관리합니다.
+
+**사용법**:
+1. `Event`, `State`, 그리고 `Bloc` 클래스를 정의.
+2. `이벤트를 통해 상태를 변경.
+
+
+```dart
+class CounterEvent {}
+class CounterIncrement extends CounterEvent {}
+
+class CounterBloc extends Bloc<CounterEvent, int> {
+  CounterBloc() : super(0);
+
+  @override
+  Stream<int> mapEventToState(CounterEvent event) async* {
+    if (event is CounterIncrement) {
+      yield state + 1;
+    }
+  }
+}
+```
+
+</details>
+
+
+<details>
+    <summary>GetX</summary>
+`GetX는` 간단하고 성능이 뛰어난 상태 관리 패키지로, 의존성 주입 및 라우팅 기능도 제공하는 통합 패키지입니다.
+
+**사용법**:
+1. `Controller` 클래스에서 상태를 정의.
+2. `Get.put()`으로 `Controller를` 제공하고, `Obx로` 상태를 구독.
+
+
+```dart
+class CounterController extends GetxController {
+  var count = 0.obs;
+
+  void increment() => count++;
+}
+
+final CounterController c = Get.put(CounterController());
+
+```
+```dart
+Obx(() => Text('${c.count}')),
+```
+
+</details>
+
+</details>
