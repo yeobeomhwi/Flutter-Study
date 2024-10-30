@@ -12,7 +12,20 @@
           "package_name": "com.example.studyfluter"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "491132251675-vqfcnvn950mg5meib175kf4r53q9nqga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studyfluter",
+            "certificate_hash": "9aa944dfb8acdcf105a40385009c0fafbfc3447c"
+          }
+        },
+        {
+          "client_id": "491132251675-lla6s8umpi7jr0jhjq59n5hhg670jt6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAWcNRGEsodwG2LQeXdLjGY2klfjTYgVNU"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491132251675-lla6s8umpi7jr0jhjq59n5hhg670jt6f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "491132251675-pbtjn4q60kd4gus3urkn0vdj3526rq77.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.studyfluter"
+              }
+            }
+          ]
         }
       }
     }
